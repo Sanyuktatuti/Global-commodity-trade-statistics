@@ -2,3 +2,4 @@ panel==1.3.8
 holoviews
 bokeh
 pandas
+matplotlib
