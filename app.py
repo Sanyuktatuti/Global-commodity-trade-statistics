@@ -115,5 +115,9 @@ layout = pn.Column(title, flow_selector, update_chord_diagram)
 # Display the application directly in the notebook
 #layout.servable()
 #pn.serve(layout)
-pn.serve(layout, show=True, port=5080, address="localhost", title="Plastic Dashboard")
 
+#this ran locally with "python app.py" at server "http://localhost:5080"
+#pn.serve(layout, show=True, port=5080, address="localhost", title="Plastic Dashboard")
+
+# This is for Render deployment
+app = layout.servable()
